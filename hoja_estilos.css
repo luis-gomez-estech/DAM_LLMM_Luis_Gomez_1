@@ -1,0 +1,28 @@
+body{background-image: url(fondo2.jpg); }
+        h3 {margin-left: 30px; margin-right: 30px}
+		h4 {text-align: center; color:#fff;margin-left: 30px; margin-right: 30px}
+		p {color: rgba(0,0,0,0.6);font-size: 1em; margin-left: 10%; margin-right: 10%}
+		div {text-align: center}
+		address {text-align: center;color:#000;border: 4px double;margin-left: 30px; margin-right: 30px; padding: 20px;}
+		a {color:grey;border: 2px;}
+		.titulo {text-align:center; color:#fff; background: rgba(0,0,0,0.5);padding-top: 30px; padding-bottom: 30px; border-left:6px solid #fff; border-right:6px solid #fff}
+		#descripcion {font-weight: bold}
+		#div_cabecera {background: rgba(0,0,0,0.1);padding-top: 20px; padding-bottom: 20px; margin:0px 30px 30px 30px;}
+		#titulo_resumen {color:#000;text-align: center;}
+		#resumen {color:#000;text-align: center; background-image: url(fondo.jpg); padding:30px; border: 4px double #fff}
+		.titulos_h2 {text-align:center;font-weight: bold}		
+		.series {color:#000;text-align: center;font-weight: bold ;background-image: url(fondo.jpg); padding:10px; border: 4px dotted #fff;margin-left: 30px; margin-right: 30px;}
+		.boton_enlace  {text-align: center; color:#fff; background: #6255b5; padding: 10px;width: 200px;border:2px solid #000;}
+		#direccion {background-image: url(fondo.jpg);padding: 20px;}
+	   .imagenes {border: 2px double #000; }
+	   .imagenes_pag_bb {margin-left: 30px;border: 6px solid #fff;}
+	   .botones_menu {display:inline;background: rgba(255,255,255,0.5); padding: 10px;border: 2px solid #fff;border-radius: 20px;margin-left: 1em;}
+	   .menu {text-align: center;}
+	   .color_texto_botones {color: #000 !important;}
+	   .icono_Awesome {font-size:48px;margin-right: 20px}
+		#titulo_serie {text-align: center;}
+		.boton_volver {text-align: center; color:#000; background: #fff; padding: 8px;width: 200px;border: 2px dotted #000;border-radius: 20px;margin-left: 30px;,margin-top: 30px;}
+		.linea {width: 300px;}
+		.listado_caracteristicas {margin-left: 30px}		
+		.boton_ir_arriba {background: #000; color: #fff; padding: 10px;}
+	   
