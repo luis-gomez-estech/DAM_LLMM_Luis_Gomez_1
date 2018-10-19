@@ -4,6 +4,9 @@
 		<meta charset="UTF-8">
 		<title>El bajo electrico</title>
 
+		<link rel="icon" type="image/png" href="guitarra_favicon.ico" /> <!-- Añado este link de referencia para decirle que ponga un icono favicon a la pagina, y tambien le digo aqui la ruta de la imagen -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Con este link le digo donde esta la libreria Font Awesome, para poder usar asi en el body iconos Font Awesome  -->
+
 	<style>
 
 		body{background-image: url(fondo2.jpg); }
@@ -11,14 +14,18 @@
 		p {color: rgba(0,0,0,0.6);font-size: 1em; margin-left: 30px; margin-right: 30px}
 		div {text-align: center}
 		address {text-align: center;color:pink;border: 4px double;margin-left: 30px; margin-right: 30px; padding: 20px;}
-		#titulo {text-align:center; color:#fff; background: rgba(0,0,0,0.5);padding-top: 30px; padding-bottom: 30px; border-left:6px solid #fff; border-right:6px solid #fff}
+		.titulo {text-align:center; color:#fff; background: rgba(0,0,0,0.5);padding-top: 30px; padding-bottom: 30px; border-left:6px solid #fff; border-right:6px solid #fff}
 		#div_cabecera {background: rgba(0,0,0,0.1);padding-top: 20px; padding-bottom: 20px; margin:0px 30px 30px 30px;}
 		#titulo_resumen {color:#000;text-align: center;}
 		#resumen {color:#000;text-align: center; background-image: url(fondo.jpg); padding:30px; border: 4px double #fff}
 		.series {color:#000;text-align: center;font-weight: bold ;background-image: url(fondo.jpg); padding:10px; border: 4px dotted #fff;margin-left: 30px; margin-right: 30px}
-		.enlaces  {text-align: center; color:#fff; background: #6255b5; padding: 10px;width: 200px}
+		.boton_enlace  {text-align: center; color:#fff; background: #6255b5; padding: 10px;width: 200px; border: 2px solid #000;}
 		#direccion {background-image: url(fondo.jpg);padding: 20px;}
 	   .imagenes {border: 2px double #000; }
+	   .botones_menu {display:inline;background: rgba(255,255,255,0.5); padding: 10px;width:300px;border: 2px solid #fff;border-radius: 20px;margin-left: 1em;}
+	   .menu {text-align: center;}
+	   .color_texto_botones {color: #000 !important;}
+	   .icono_Awesome {font-size:48px;margin-right: 20px}
 
 
 
@@ -27,15 +34,26 @@
 		</head>
 	<body>
 
-	<h1 id="titulo">BAJOS YAMAHA</h1> <!-- Teoria sobre el bajo electrico -->
-		
+	<h1 id="top" class="titulo"><i class="fa fa-spinner icono_Awesome"></i>BAJOS YAMAHA</h1> <!-- Aqui añado un icono Font Awesome al lado del titulo -->
+
+	<br>
+
+			<ul class="menu" style="list-style-type:none">
+				<li class="botones_menu"><a class="color_texto_botones" href="#serie_bb">SERIE BB</a></li>
+				<li class="botones_menu"><a class="color_texto_botones" href="#serie_trbx">SERIE TRBX</a></li>
+				<li class="botones_menu"><a class="color_texto_botones" href="#serie_trb">SERIE TRB</a></li>
+				<li class="botones_menu"><a class="color_texto_botones" href="#serie_rbxa2">SERIE RBXA2</a></li>
+					
+			</ul>
+
+	<br>
 
 		<h2 id="titulo_resumen"><strong><i>Muestra tu otro lado</i></strong></h2>
 
 		<div id="div_cabecera">
 		
 
-			<p  id="resumen">Para el <mark>bajista</mark> que solo se conforma con lo mejor, la gama Pro representa la culminación de todo aquello que los diseñadores de los BB han perseguido durante <del>cinco</del> cuatro décadas en búsqueda de la perfección. Este es el bajo con el que siempre has soñado..</p>
+			<p  id="resumen">Para el bajista  que solo se conforma con lo mejor, la gama Pro representa la culminación de todo aquello que los diseñadores de los BB han perseguido durante <del>cinco</del> cuatro décadas en búsqueda de la perfección. Este es el bajo con el que siempre has soñado..</p>
 		
 		</div>
 
@@ -43,16 +61,16 @@
 
 			<br>			
 				
-		<h3 class="series">SERIE BB</h3>
+		<h3 id="serie_bb" class="series">SERIE BB</h3>
 
-        	<p>Dese su nacimiento en 1977, los bajos <em>BB</em> han sido la elección de muchos bajistas de renombre, y con ellos han conseguido el sonido que les ha hecho famosos: Nathan East, Tony Kanal, Billy Sheehan, Glenn Hughes, Robbie Takac, Peter Hook y Jack Gibson, entre otros. Los nuevos BB elevan el icónico estilo, la versatilidad y el legendario sonido de estos bajos clásicos a un nuevo nivel.</p>
+        	<p>Dese su nacimiento en 1977, los bajos  <mark><em>BB</em></mark> han sido la elección de muchos bajistas de renombre, y con ellos han conseguido el sonido que les ha hecho famosos: Nathan East, Tony Kanal, Billy Sheehan, Glenn Hughes, Robbie Takac, Peter Hook y Jack Gibson, entre otros. Los nuevos BB elevan el icónico estilo, la versatilidad y el legendario sonido de estos bajos clásicos a un nuevo nivel.</p>
 
 		
 			<div> 
-			<img style="border-radius: 50%;" class="imagenes" src="yamaha_serie_bb.jpg" width=250 height=250 alt=”foto pro">
+			<a href="serie_bb.html"><img style="border-radius: 50%;" class="imagenes" src="yamaha_serie_bb.jpg" width=250 height=250 alt=”foto pro"></a>
 			</div>
 
-	    <h3 class="series">SERIE TRBX</h3>
+	    <h3 id="serie_trbx" class="series">SERIE TRBX</h3>
 
         	<p>Eres la <ins>piedra angular de tu banda</ins>, su refugio rítmico, la base fundamental de su música. Y lo sabes... Necesitas un instrumento fiable y todoterreno para expresarte con libertad, para innovar, para crear en directo y ensanchar tus fronteras musicales. Un bajo con el que sentirte cómodo desde el primer momento. Con los TRBX de Yamaha, te sentirás en casa, todo encaja y nada se ha dejado al azar... Es tu momento...</p>
 
@@ -61,16 +79,16 @@
 			<img style="border-radius: 35%;" class="imagenes"  src="yamaha_serie_trbx.jpg" width=250 height=250 alt=”foto pro">
 			</div>
 
-		<h3 class="series">SERIE TRB</h3>
+		<h3 id="serie_trb" class="series">SERIE TRB</h3>
 
         	<p>La versátil serie Yamaha TRB nació durante los años<sup>80</sup>, paralelamente al auge de los sintetizadores. La serie se ha diseñado para abarcar un mayor espectro tonal, tanto en las frecuencias graves como en las agudas, con un confort excepcional.</p>
 
 		
 			<div> 
-			<img style="border-radius: 10%; border: 3px dotted" class="imagenes"  src="yamaha_serie_trb.jpg" width=250 height=250 alt=”foto pro">
+			<img style="border-radius: 10%; border: 3px dotted #000" class="imagenes"  src="yamaha_serie_trb.jpg" width=250 height=250 alt=”foto pro">
 			</div>
 
-		<h3 class="series">SERIE RBXA2</h3>
+		<h3 id="serie_rbxa2" class="series">SERIE RBXA2</h3>
 
         	<p>La línea de bajos RBXA2 se inspira en el innovador diseño de la guitarra <blockquote cite="https://es.yamaha.com/es/products/musical_instruments/guitars_basses/el_guitars/rgxa2/index.html">Yamaha RGXA2</blockquote></p>
 
@@ -84,7 +102,12 @@
 			<br>	
 			<br>		
 			<div>
-			<a class="enlaces" href="serie_bb.html" target="">Ver serie BB</a>
+			<a class="boton_enlace" href="serie_bb.html" target="">Ver serie BB</a>
+			</div>
+			<br>
+			
+			<div>
+			<a class="color_texto_botones" href="#top">Ir arriba</a>
 			</div>
 			<br>
 				<br>
